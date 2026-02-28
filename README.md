@@ -8,7 +8,7 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 ## Screenshot
 
-![Kuaishou Video Downloader UI](Screenshot%202026-02-28%20at%2014-07-25%20%E7%B2%BE%E5%BD%A9%E6%8E%A8%E8%8D%90.png)
+![Kuaishou Video Downloader UI](screenshot.png)
 
 ## Features
 
