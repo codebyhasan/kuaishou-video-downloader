@@ -24,6 +24,12 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 ## Installation
 
+### Download Latest Release
+
+Download the latest release package from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest):
+
+- **kuaishou-v1.0.0.zip** - Extension package (extract before installing)
+
 ### Chrome, Edge, Brave, Opera (Chromium-based)
 
 1. Download or clone this repository
