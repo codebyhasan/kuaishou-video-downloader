@@ -650,7 +650,7 @@
 
     const w = document.createElement('div');
     w.id = 'ksdown-widget';
-    w.innerHTML = `
+    w.insertAdjacentHTML('beforeend', `
       <div id="ksdown-panel">
         <div id="ksdown-panel-header">
           <div id="ksdown-status-dot"></div>
@@ -713,7 +713,8 @@
         <span id="ksdown-pill-divider"></span>
         <div id="ksdown-pill-arrow">${I.chevron}</div>
       </div>
-    `;
+    `);
+    
     document.body.appendChild(w);
     attachEvents();
     updatePillState();
@@ -784,7 +785,7 @@
       isDownloading = true;
       const btn = document.getElementById('ksd-dl-all');
       try {
-        if (btn) { btn.classList.add('loading'); btn.innerHTML = I.spin + ' Downloading…'; }
+        if (btn) { btn.classList.add('loading'); btn.innerHTML = I.spin; btn.append(' Downloading…'); }
         showProg(true);
         setProgLabel('Downloading video…');
         await blobDownload(currentData.videoSrc, currentData.filename, setPct);
@@ -793,15 +794,15 @@
           setPct(0);
           await blobDownload(currentData.thumbnailSrc, currentData.thumbname, null);
         }
-        if (btn) { btn.classList.remove('loading'); btn.classList.add('success'); btn.innerHTML = I.check + ' All done!'; }
+        if (btn) { btn.classList.remove('loading'); btn.classList.add('success'); btn.innerHTML = I.check; btn.append(' All done!'); }
         showToast('✓ Video & thumbnail saved!');
         setTimeout(function () {
-          try { if (btn) { btn.classList.remove('success'); btn.innerHTML = I.dl + ' Download Video + Thumbnail'; } } catch (e) {}
+          try { if (btn) { btn.classList.remove('success'); btn.innerHTML = I.dl; btn.append(' Download Video + Thumbnail'); } } catch (e) {}
           isDownloading = false;
         }, 3000);
       } catch (err) {
         console.warn('[KsDown] dl-all err:', err);
-        if (btn) { btn.classList.remove('loading'); btn.innerHTML = I.dl + ' Download Video + Thumbnail'; }
+        if (btn) { btn.classList.remove('loading'); btn.innerHTML = I.dl; btn.append(' Download Video + Thumbnail'); }
         showToast('Failed — try again');
         isDownloading = false;
       } finally {
@@ -998,15 +999,17 @@
     const b = document.querySelector(sel);
     if (!b) return;
     b.classList.add('loading');
-    b.innerHTML = html;
+    b.textContent = '';
+    b.insertAdjacentHTML('beforeend', html);
   }
   function btnOk(sel, ok, reset, delay) {
     const b = document.querySelector(sel);
     if (!b) return;
     b.classList.remove('loading');
     b.classList.add('success');
-    b.innerHTML = ok;
-    setTimeout(function () { try { b.classList.remove('success'); b.innerHTML = reset; } catch (e) {} }, delay != null ? delay : 2400);
+    b.textContent = '';
+    b.insertAdjacentHTML('beforeend', ok);
+    setTimeout(function () { try { b.classList.remove('success'); b.textContent = ''; b.insertAdjacentHTML('beforeend', reset); } catch (e) {} }, delay != null ? delay : 2400);
   }
 
   // ─── Toast ────────────────────────────────────────────────────────────────────

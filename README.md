@@ -4,6 +4,7 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-orange?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
 
 ## Screenshot
 
@@ -11,6 +12,7 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 ## Features
 
+- **Quick Access** - Click the extension icon to open Kuaishou feed
 - **Detect Videos Automatically** - Detects videos on feed pages and short-video pages
 - **Download Options**:
   - Download video only
@@ -41,7 +43,12 @@ Download the latest release package from the [Releases page](https://github.com/
 
 ### Firefox
 
-**Temporary Installation (No Signing Required)**
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-orange?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
+
+**Install from Mozilla Add-ons (Recommended)**
+1. Install directly from: [Kuaishou Video Downloader](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
+
+**Temporary Installation (Development)**
 1. Download `kuaishou-v1.0.0.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
 2. Extract the zip file
 3. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
@@ -72,6 +79,7 @@ Download the latest release package from the [Releases page](https://github.com/
 kuaishou-video-downloader/
 ├── manifest.json       # Extension manifest (MV3)
 ├── content.js          # Main extension logic
+├── background.js        # Background script for icon click
 ├── icon16.png          # 16x16 icon
 ├── icon48.png          # 48x48 icon
 ├── icon128.png         # 128x128 icon
@@ -82,6 +90,7 @@ kuaishou-video-downloader/
 
 - `clipboardWrite` - For copying video info to clipboard
 - `clipboardRead` - For clipboard operations
+- `tabs` - For opening Kuaishou when clicking the extension icon
 
 ## Supported Pages
 
