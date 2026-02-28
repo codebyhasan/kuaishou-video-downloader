@@ -55,14 +55,7 @@ Download the latest release package from the [Releases page](https://github.com/
 4. Click "Load Temporary Add-on..."
 5. Select the `manifest.json` file
 
-**Note:** Temporary add-ons are removed when Firefox closes. For permanent installation, you need to submit to Mozilla Add-ons for signing.
-
-**Permanent Installation (Requires Mozilla Signing)**
-1. Download source code from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
-2. Go to [Mozilla Add-ons Developer Hub](https://addons.mozilla.org/developers/)
-3. Create an account and submit as "Unlisted" extension
-4. Upload the extension for signing
-5. After Mozilla signs it, install from your developer dashboard
+**Note:** Temporary add-ons are removed when Firefox closes. For permanent installation, install from Mozilla Add-ons.
 
 ## Usage
 
