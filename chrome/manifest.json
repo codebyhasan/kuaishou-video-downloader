@@ -12,7 +12,7 @@
   ],
   "permissions": ["clipboardWrite", "clipboardRead", "tabs"],
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
   "icons": {
     "16": "icon16.png",
