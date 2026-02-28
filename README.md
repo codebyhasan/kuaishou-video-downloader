@@ -28,43 +28,36 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 Download the latest release package from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest):
 
-- **kuaishou-v1.0.0.zip** - For Chrome, Edge, Brave, Opera (extract before installing)
-- **kuaishou-v1.0.0-firefox.xpi** - For Firefox (permanent installation - requires signing)
+- **kuaishou-v1.0.0.zip** - For all browsers (extract before installing)
 
 ### Chrome, Edge, Brave, Opera (Chromium-based)
 
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable "Developer mode" (toggle in top-right)
-4. Click "Load unpacked"
-5. Select the extension folder
+1. Download `kuaishou-v1.0.0.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+2. Extract the zip file
+3. Open Chrome and navigate to `chrome://extensions`
+4. Enable "Developer mode" (toggle in top-right)
+5. Click "Load unpacked"
+6. Select the extracted extension folder
 
-### Firefox (Permanent Installation)
+### Firefox
 
-Firefox requires extensions to be signed by Mozilla for permanent installation. To install permanently:
+**Temporary Installation (No Signing Required)**
+1. Download `kuaishou-v1.0.0.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+2. Extract the zip file
+3. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+4. Click "Load Temporary Add-on..."
+5. Select the `manifest.json` file
 
-**Option 1: Submit to Mozilla Add-ons (Recommended)**
-1. Download `kuaishou-v1.0.0-firefox.xpi` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+**Note:** Temporary add-ons are removed when Firefox closes. For permanent installation, you need to submit to Mozilla Add-ons for signing.
+
+**Permanent Installation (Requires Mozilla Signing)**
+1. Download source code from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
 2. Go to [Mozilla Add-ons Developer Hub](https://addons.mozilla.org/developers/)
 3. Create an account and submit as "Unlisted" extension
-4. Upload the .xpi file for signing
-5. After signing, install from your developer dashboard
+4. Upload the extension for signing
+5. After Mozilla signs it, install from your developer dashboard
 
-**Option 2: Firefox Nightly/DevEdition (No Signing Required)**
-1. Download [Firefox Developer Edition](https://www.mozilla.org/firefox/developer/) or [Firefox Nightly](https://www.mozilla.org/firefox/nightly/)
-2. In address bar, go to `about:config`
-3. Set `xpinstall.signatures.required` to `false`
-4. Download `kuaishou-v1.0.0-firefox.xpi` from releases
-5. Drag and drop the .xpi file into Firefox window
-
-### Firefox (Temporary - No Signing)
-
-1. Download `kuaishou-v1.0.0-firefox.xpi` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-3. Click "Load Temporary Add-on..."
-4. Select the .xpi file
-
-**Note:** Temporary add-ons are removed when Firefox closes. For permanent installation, use the methods above.
+## Usage
 
 1. Visit any Kuaishou page (feed or short-video)
 2. Click the download pill icon in the bottom-right corner
