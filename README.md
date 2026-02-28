@@ -26,34 +26,38 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 ## Installation
 
-### Download Latest Release
+### Download Source Code
 
-Download the latest release package from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest):
+Clone or download the source code from GitHub:
 
-- **kuaishou-v1.0.0.zip** - For all browsers (extract before installing)
+```bash
+git clone https://github.com/codebyhasan/kuaishou-video-downloader.git
+```
+
+Or download as ZIP from the Code button on the repository page.
 
 ### Chrome, Edge, Brave, Opera (Chromium-based)
 
-1. Download `kuaishou-v1.0.0.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+1. Download source code from GitHub (click Code > Download ZIP)
 2. Extract the zip file
 3. Open Chrome and navigate to `chrome://extensions`
 4. Enable "Developer mode" (toggle in top-right)
 5. Click "Load unpacked"
 6. Select the extracted extension folder
 
-### Firefox
+### Firefox (Temporary Installation)
 
-[![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-orange?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
-
-**Install from Mozilla Add-ons (Recommended)**
-1. Install directly from: [Kuaishou Video Downloader](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
-
-**Temporary Installation (Development)**
-1. Download `kuaishou-v1.0.0.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+1. Download source code from GitHub (click Code > Download ZIP)
 2. Extract the zip file
 3. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
 4. Click "Load Temporary Add-on..."
 5. Select the `manifest.json` file
+
+### Firefox (Recommended)
+
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox-Add--ons-orange?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/kuaishou-video-downloader/)
+
+Install directly from Mozilla Add-ons.
 
 **Note:** Temporary add-ons are removed when Firefox closes. For permanent installation, install from Mozilla Add-ons.
 
