@@ -38,20 +38,18 @@ Or download as ZIP from the Code button on the repository page.
 
 ### Chrome, Edge, Brave, Opera (Chromium-based)
 
-1. Download source code from GitHub (click Code > Download ZIP)
-2. Extract the zip file
-3. Open Chrome and navigate to `chrome://extensions`
-4. Enable "Developer mode" (toggle in top-right)
-5. Click "Load unpacked"
-6. Select the extracted extension folder
+1. Use the `chrome/` folder
+2. Open Chrome and navigate to `chrome://extensions`
+3. Enable "Developer mode" (toggle in top-right)
+4. Click "Load unpacked"
+5. Select the `chrome` folder
 
 ### Firefox (Temporary Installation)
 
-1. Download source code from GitHub (click Code > Download ZIP)
-2. Extract the zip file
-3. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-4. Click "Load Temporary Add-on..."
-5. Select the `manifest.json` file
+1. Use the `firefox/` folder
+2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+3. Click "Load Temporary Add-on..."
+4. Select `firefox/manifest.json`
 
 ### Firefox (Recommended)
 
@@ -74,13 +72,18 @@ Install directly from Mozilla Add-ons.
 
 ```
 kuaishou-video-downloader/
-├── manifest.json       # Extension manifest (MV3)
-├── content.js          # Main extension logic
-├── background.js        # Background script for icon click
-├── icon16.png          # 16x16 icon
-├── icon48.png          # 48x48 icon
-├── icon128.png         # 128x128 icon
-└── README.md           # This file
+├── chrome/              # Chrome/Chromium version
+│   ├── manifest.json
+│   ├── content.js
+│   ├── background.js
+│   └── icons/
+├── firefox/             # Firefox version
+│   ├── manifest.json
+│   ├── content.js
+│   ├── background.js
+│   └── icons/
+├── README.md
+└── description.md
 ```
 
 ## Permissions
