@@ -28,7 +28,8 @@ A browser extension for extracting and downloading videos from Kuaishou (快手)
 
 Download the latest release package from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest):
 
-- **kuaishou-v1.0.0.zip** - Extension package (extract before installing)
+- **kuaishou-v1.0.0.zip** - For Chrome, Edge, Brave, Opera (extract before installing)
+- **kuaishou-v1.0.0-firefox.zip** - For Firefox (extract before installing)
 
 ### Chrome, Edge, Brave, Opera (Chromium-based)
 
@@ -40,10 +41,11 @@ Download the latest release package from the [Releases page](https://github.com/
 
 ### Firefox
 
-1. Download or clone this repository
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
-3. Click "Load Temporary Add-on..."
-4. Select any file in the extension folder (e.g., `manifest.json`)
+1. Download `kuaishou-v1.0.0-firefox.zip` from the [Releases page](https://github.com/codebyhasan/kuaishou-video-downloader/releases/latest)
+2. Extract the zip file
+3. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+4. Click "Load Temporary Add-on..."
+5. Select any file in the extension folder (e.g., `manifest.json`)
 
 ## Usage
 
