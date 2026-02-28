@@ -1,4 +1,8 @@
 // background.js - Kuaishou Video Downloader
-browser.action.onClicked.addListener(() => {
-  browser.tabs.create({ url: 'https://www.kuaishou.com/new-reco' });
+chrome.runtime.onInstalled.addListener(() => {
+  console.log('Extension installed');
+});
+
+chrome.action.onClicked.addListener((tab) => {
+  chrome.tabs.create({ url: 'https://www.kuaishou.com/new-reco' });
 });
